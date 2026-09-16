@@ -67,6 +67,17 @@
 	margin-bottom: 12px;
 }
 
+/*
+ * A table rendered as a direct child of a card (not wrapped in
+ * .crashtape-table-wrap) has no bottom margin of its own, so a heading
+ * that follows it butts straight up against it (margin-top: 0 above).
+ * Wrapped tables already get their spacing from the wrapper's own
+ * margin-bottom below, so this only needs to cover the bare case.
+ */
+.crashtape-card > table.widefat {
+	margin-bottom: 20px;
+}
+
 .crashtape-card-grid {
 	display: flex;
 	flex-wrap: wrap;
