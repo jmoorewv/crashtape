@@ -1,0 +1,1270 @@
+# Copyright (C) 2026 Jonathan Moore
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CrashTape 1.0.0-rc.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/crashtape\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-16T14:47:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: crashtape\n"
+
+#. Plugin Name of the plugin
+#: crashtape.php
+#: src/Admin/Timeline.php:43
+#: src/Admin/Timeline.php:44
+#: src/Admin/Timeline.php:875
+#: src/SiteHealth/Integration.php:26
+msgid "CrashTape"
+msgstr ""
+
+#. Description of the plugin
+#: crashtape.php
+msgid "WordPress Diagnostic & Support Recorder. Reproduce it. Record it. Fix it. Release candidate: feature-frozen, accepting release-blocker and important fixes only."
+msgstr ""
+
+#. Author of the plugin
+#: crashtape.php
+msgid "Jonathan Moore"
+msgstr ""
+
+#. Author URI of the plugin
+#: crashtape.php
+msgid "https://jmoorewv.com"
+msgstr ""
+
+#: src/Admin/Timeline.php:130
+#: src/Admin/Timeline.php:146
+#: src/Admin/Timeline.php:158
+#: src/Admin/Timeline.php:174
+#: src/Admin/Timeline.php:192
+#: src/Admin/Timeline.php:208
+#: src/Admin/Timeline.php:220
+#: src/Admin/Timeline.php:232
+#: src/Admin/Timeline.php:245
+#: src/Admin/Timeline.php:257
+#: src/Admin/Timeline.php:273
+#: src/Admin/Timeline.php:285
+#: src/Admin/Timeline.php:297
+#: src/Admin/Timeline.php:309
+#: src/Admin/Timeline.php:321
+#: src/Admin/Timeline.php:346
+#: src/Admin/Timeline.php:368
+#: src/Admin/Timeline.php:387
+#: src/Admin/Timeline.php:415
+#: src/Admin/Timeline.php:435
+#: src/Admin/Timeline.php:453
+#: src/Admin/Timeline.php:489
+#: src/Admin/Timeline.php:505
+#: src/Admin/Timeline.php:517
+#: src/Admin/Timeline.php:533
+#: src/Admin/Timeline.php:560
+#: src/Admin/Timeline.php:576
+#: src/Admin/Timeline.php:614
+#: src/Admin/Timeline.php:684
+msgid "Insufficient permissions."
+msgstr ""
+
+#: src/Admin/Timeline.php:164
+#: src/Admin/Timeline.php:180
+msgid "Install the MU loader under Conflict Isolation first."
+msgstr ""
+
+#: src/Admin/Timeline.php:375
+msgid "All diagnostic sessions and recorded changes were deleted. Settings, the internal log, and Passive Monitoring stats were not affected."
+msgstr ""
+
+#: src/Admin/Timeline.php:627
+msgid "Support package generated."
+msgstr ""
+
+#: src/Admin/Timeline.php:630
+msgid "No completed session to generate a support package for. Stop a diagnostic session first."
+msgstr ""
+
+#: src/Admin/Timeline.php:700
+msgid "This support package was not found. It may have already expired and been removed by retention cleanup. Go back and generate a new one from the session's Sessions tab."
+msgstr ""
+
+#: src/Admin/Timeline.php:706
+msgid "This support package's file is missing on disk, even though it's still listed. Generate a new one from the session's Sessions tab; this old entry will be cleaned up automatically."
+msgstr ""
+
+#: src/Admin/Timeline.php:737
+msgid "Current Site Health"
+msgstr ""
+
+#. translators: %d: number of PHP fatals recorded today by Passive Monitoring
+#: src/Admin/Timeline.php:760
+#: src/Admin/Timeline.php:766
+msgid "PHP Errors"
+msgstr ""
+
+#. translators: %d: number of PHP fatals recorded today by Passive Monitoring
+#: src/Admin/Timeline.php:760
+msgid "%d critical (today)"
+msgid_plural "%d critical (today)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of outbound HTTP failures recorded today by Passive Monitoring
+#: src/Admin/Timeline.php:762
+#: src/Admin/Timeline.php:766
+msgid "External Services"
+msgstr ""
+
+#. translators: %d: number of outbound HTTP failures recorded today by Passive Monitoring
+#. translators: %d: number of mail failures recorded today by Passive Monitoring
+#: src/Admin/Timeline.php:762
+#: src/Admin/Timeline.php:764
+msgid "%d failure (today)"
+msgid_plural "%d failures (today)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of mail failures recorded today by Passive Monitoring
+#: src/Admin/Timeline.php:764
+#: src/Admin/Timeline.php:766
+msgid "Mail"
+msgstr ""
+
+#. translators: %d: number of mail failures recorded today by Passive Monitoring
+#: src/Admin/Timeline.php:764
+msgid "Healthy (today)"
+msgstr ""
+
+#: src/Admin/Timeline.php:767
+msgid "Passive Monitoring is off, not measured"
+msgstr ""
+
+#. translators: %d: number of WP-Cron/Action Scheduler tasks currently overdue
+#: src/Admin/Timeline.php:772
+msgid "Scheduled Tasks"
+msgstr ""
+
+#. translators: %d: number of WP-Cron/Action Scheduler tasks currently overdue
+#: src/Admin/Timeline.php:772
+msgid "%d overdue"
+msgid_plural "%d overdue"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of WP-Cron/Action Scheduler tasks currently overdue
+#: src/Admin/Timeline.php:772
+msgid "Healthy"
+msgstr ""
+
+#. translators: %d: number of plugin/theme/core changes recorded in the last 24 hours
+#: src/Admin/Timeline.php:774
+#: src/Admin/Timeline.php:996
+msgid "Recent Changes"
+msgstr ""
+
+#. translators: %d: number of plugin/theme/core changes recorded in the last 24 hours
+#: src/Admin/Timeline.php:774
+msgid "%d in the last 24 hours"
+msgid_plural "%d in the last 24 hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Timeline.php:779
+msgid "Enable Passive Monitoring below for continuous PHP/mail/external-service health tracking between diagnostic sessions."
+msgstr ""
+
+#: src/Admin/Timeline.php:782
+msgid "Privacy:"
+msgstr ""
+
+#. translators: %s: privacy profile name, e.g. Strict
+#: src/Admin/Timeline.php:785
+msgid "%s redaction enabled"
+msgstr ""
+
+#: src/Admin/Timeline.php:815
+msgid "Recent Sessions"
+msgstr ""
+
+#: src/Admin/Timeline.php:818
+msgid "No completed sessions yet."
+msgstr ""
+
+#. translators: 1: session label or UUID (already escaped) 2: status pill markup (already-safe HTML) 3: start date (already escaped)
+#: src/Admin/Timeline.php:830
+msgid "%1$s %2$s (%3$s)"
+msgstr ""
+
+#: src/Admin/Timeline.php:850
+msgid "Dashboard"
+msgstr ""
+
+#: src/Admin/Timeline.php:851
+msgid "Sessions"
+msgstr ""
+
+#: src/Admin/Timeline.php:852
+#: src/Admin/Timeline.php:1412
+msgid "Diagnostics"
+msgstr ""
+
+#: src/Admin/Timeline.php:853
+msgid "Conflict Finder"
+msgstr ""
+
+#: src/Admin/Timeline.php:854
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Timeline.php:890
+msgid "Recording:"
+msgstr ""
+
+#: src/Admin/Timeline.php:890
+#: src/SiteHealth/Integration.php:34
+#: src/SiteHealth/Integration.php:46
+msgid "Active"
+msgstr ""
+
+#. translators: %s: theme name
+#: src/Admin/Timeline.php:901
+msgid "Theme isolated: this diagnostic browser is rendering with %s instead of the active theme."
+msgstr ""
+
+#: src/Admin/Timeline.php:914
+msgid "Stop Recording"
+msgstr ""
+
+#: src/Admin/Timeline.php:920
+msgid "Session label (optional)"
+msgstr ""
+
+#: src/Admin/Timeline.php:923
+msgid "How will you reproduce the problem?"
+msgstr ""
+
+#: src/Admin/Timeline.php:925
+msgid "In this logged-in browser"
+msgstr ""
+
+#: src/Admin/Timeline.php:927
+msgid "As a logged-out visitor"
+msgstr ""
+
+#. translators: %s: theme name, e.g. Twenty Twenty-Five
+#: src/Admin/Timeline.php:937
+msgid "Use the default theme (%s) instead of the active theme for this diagnostic browser only, which helps tell a theme problem apart from a plugin problem. Never changes the site's theme for other visitors."
+msgstr ""
+
+#: src/Admin/Timeline.php:943
+msgid "Start Diagnostic Session"
+msgstr ""
+
+#: src/Admin/Timeline.php:954
+msgid "Raw Timeline: Most Recent Session"
+msgstr ""
+
+#: src/Admin/Timeline.php:955
+msgid "Session"
+msgstr ""
+
+#. translators: 1: event count 2: error count 3: warning count
+#: src/Admin/Timeline.php:960
+msgid "%1$d events, %2$d errors, %3$d warnings"
+msgstr ""
+
+#: src/Admin/Timeline.php:982
+msgid "Technical details (environment & recent changes)"
+msgstr ""
+
+#: src/Admin/Timeline.php:1137
+msgid "CrashTape sections"
+msgstr ""
+
+#: src/Admin/Timeline.php:1206
+msgid "Conflict Isolation (experimental)"
+msgstr ""
+
+#: src/Admin/Timeline.php:1218
+msgid "The Conflict Finder below narrows down which plugin is causing a problem by temporarily loading a reduced plugin set, but only for one specific diagnostic browser, identified by a signed cookie. This \"MU loader\" is what makes that possible: a small file in wp-content/mu-plugins/ that filters which plugins load for that one browser only. It never changes the site's real active-plugins list, every other visitor is unaffected the whole time, and it can be removed at any time (including an emergency bypass if a test ever leaves your own diagnostic browser in a state you need to immediately back out of)."
+msgstr ""
+
+#: src/Admin/Timeline.php:1223
+msgid "MU loader status: installed."
+msgstr ""
+
+#: src/Admin/Timeline.php:1224
+msgid "MU loader status: not installed."
+msgstr ""
+
+#: src/Admin/Timeline.php:1231
+msgid "Remove the CrashTape MU loader? This immediately restores normal plugin loading."
+msgstr ""
+
+#: src/Admin/Timeline.php:1231
+msgid "Remove MU Loader"
+msgstr ""
+
+#: src/Admin/Timeline.php:1235
+msgid "Install the CrashTape MU loader? This writes a file to wp-content/mu-plugins/. It only ever filters which plugins load for a browser carrying a valid isolation cookie, and can be removed at any time."
+msgstr ""
+
+#: src/Admin/Timeline.php:1235
+msgid "Install MU Loader"
+msgstr ""
+
+#: src/Admin/Timeline.php:1249
+msgid "Disable Emergency Bypass"
+msgstr ""
+
+#: src/Admin/Timeline.php:1249
+msgid "Enable Emergency Bypass"
+msgstr ""
+
+#: src/Admin/Timeline.php:1251
+msgid "Emergency bypass immediately stops the MU loader from filtering anything, without removing the file."
+msgstr ""
+
+#: src/Admin/Timeline.php:1255
+msgid "Isolation test active in this browser."
+msgstr ""
+
+#. translators: %d: number of plugins kept active
+#: src/Admin/Timeline.php:1258
+msgid "Keeping %d plugin(s) active for this browser only."
+msgstr ""
+
+#: src/Admin/Timeline.php:1266
+msgid "Stop Isolation Test"
+msgstr ""
+
+#: src/Admin/Timeline.php:1282
+msgid "Keep active for this test (CrashTape itself is always kept):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1295
+msgid "Start Isolation Test"
+msgstr ""
+
+#: src/Admin/Timeline.php:1312
+msgid "Compare Sessions"
+msgstr ""
+
+#: src/Admin/Timeline.php:1317
+msgid "Need at least two completed sessions to compare."
+msgstr ""
+
+#: src/Admin/Timeline.php:1329
+msgid "Working session"
+msgstr ""
+
+#: src/Admin/Timeline.php:1330
+msgid "Failing session"
+msgstr ""
+
+#: src/Admin/Timeline.php:1334
+msgid "Choose a session"
+msgstr ""
+
+#: src/Admin/Timeline.php:1346
+msgid "Compare"
+msgstr ""
+
+#: src/Admin/Timeline.php:1357
+msgid "One or both sessions could not be found."
+msgstr ""
+
+#: src/Admin/Timeline.php:1363
+msgid "Environment differences"
+msgstr ""
+
+#: src/Admin/Timeline.php:1366
+msgid "No environment differences."
+msgstr ""
+
+#: src/Admin/Timeline.php:1368
+msgid "Field"
+msgstr ""
+
+#: src/Admin/Timeline.php:1368
+#: src/Admin/Timeline.php:1380
+msgid "Working"
+msgstr ""
+
+#: src/Admin/Timeline.php:1368
+#: src/Admin/Timeline.php:1380
+msgid "Failing"
+msgstr ""
+
+#: src/Admin/Timeline.php:1375
+msgid "Plugin version differences"
+msgstr ""
+
+#: src/Admin/Timeline.php:1378
+msgid "No plugin version differences."
+msgstr ""
+
+#: src/Admin/Timeline.php:1380
+msgid "Plugin"
+msgstr ""
+
+#: src/Admin/Timeline.php:1387
+msgid "Errors only in the failing session"
+msgstr ""
+
+#: src/Admin/Timeline.php:1390
+msgid "Errors only in the working session"
+msgstr ""
+
+#: src/Admin/Timeline.php:1396
+msgid "None."
+msgstr ""
+
+#: src/Admin/Timeline.php:1417
+msgid "No diagnostics registered. Other plugins can add one via crashtape_register_diagnostic()."
+msgstr ""
+
+#: src/Admin/Timeline.php:1422
+msgid "Diagnostic"
+msgstr ""
+
+#: src/Admin/Timeline.php:1422
+#: src/Admin/Timeline.php:1771
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Timeline.php:1422
+#: src/Admin/Timeline.php:1586
+#: src/Admin/Timeline.php:2641
+msgid "Summary"
+msgstr ""
+
+#: src/Admin/Timeline.php:1442
+msgid "Custom Checks"
+msgstr ""
+
+#: src/Admin/Timeline.php:1450
+msgid "Run All Checks"
+msgstr ""
+
+#: src/Admin/Timeline.php:1463
+#: src/Admin/Timeline.php:1771
+msgid "Check"
+msgstr ""
+
+#: src/Admin/Timeline.php:1463
+#: src/Admin/Timeline.php:1586
+#: src/Admin/Timeline.php:2633
+msgid "Type"
+msgstr ""
+
+#: src/Admin/Timeline.php:1463
+msgid "Result"
+msgstr ""
+
+#: src/Admin/Timeline.php:1463
+msgid "Actions"
+msgstr ""
+
+#: src/Admin/Timeline.php:1471
+msgid "Not run yet."
+msgstr ""
+
+#: src/Admin/Timeline.php:1476
+msgid "Delete"
+msgstr ""
+
+#: src/Admin/Timeline.php:1483
+msgid "No custom checks defined yet."
+msgstr ""
+
+#: src/Admin/Timeline.php:1486
+msgid "Add a Check"
+msgstr ""
+
+#: src/Admin/Timeline.php:1491
+msgid "Label:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1494
+msgid "Type:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1496
+msgid "WordPress option equals a value"
+msgstr ""
+
+#: src/Admin/Timeline.php:1497
+msgid "PHP constant is defined"
+msgstr ""
+
+#: src/Admin/Timeline.php:1498
+msgid "URL responds with an expected HTTP status"
+msgstr ""
+
+#: src/Admin/Timeline.php:1499
+msgid "A plugin is active"
+msgstr ""
+
+#: src/Admin/Timeline.php:1502
+msgid "Option equals (option name and expected value):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1503
+msgid "option name"
+msgstr ""
+
+#: src/Admin/Timeline.php:1504
+msgid "expected value"
+msgstr ""
+
+#: src/Admin/Timeline.php:1506
+msgid "Constant defined (constant name):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1507
+msgid "e.g. WP_DEBUG"
+msgstr ""
+
+#: src/Admin/Timeline.php:1509
+msgid "URL status (URL and expected status code(s)):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1513
+msgid "Plugin active (plugin file, e.g. woocommerce/woocommerce.php):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1516
+msgid "Only the fields matching the selected type above are used."
+msgstr ""
+
+#: src/Admin/Timeline.php:1518
+msgid "Add Check"
+msgstr ""
+
+#: src/Admin/Timeline.php:1528
+msgid "Passive Monitoring"
+msgstr ""
+
+#: src/Admin/Timeline.php:1535
+msgid "Optional, low-volume background monitoring that runs independently of any recording session: PHP fatal errors, mail failures, outbound HTTP failures, and periodic scheduled-task backlog checks. Nothing in the browser is tracked, and no full event detail is kept: only rolling daily counts and a short list of the most common recurring errors."
+msgstr ""
+
+#: src/Admin/Timeline.php:1540
+msgid "Enable passive monitoring"
+msgstr ""
+
+#: src/Admin/Timeline.php:1541
+msgid "Keep daily counts for (days):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1543
+msgid "Save Passive Monitoring Setting"
+msgstr ""
+
+#: src/Admin/Timeline.php:1552
+msgid "Recent Daily Counts"
+msgstr ""
+
+#: src/Admin/Timeline.php:1555
+msgid "No data yet."
+msgstr ""
+
+#: src/Admin/Timeline.php:1560
+msgid "Day"
+msgstr ""
+
+#: src/Admin/Timeline.php:1560
+msgid "Counts"
+msgstr ""
+
+#: src/Admin/Timeline.php:1576
+msgid "Recurring Errors"
+msgstr ""
+
+#: src/Admin/Timeline.php:1586
+msgid "Count"
+msgstr ""
+
+#: src/Admin/Timeline.php:1586
+msgid "Last Seen"
+msgstr ""
+
+#: src/Admin/Timeline.php:1603
+msgid "Clear Passive Monitoring Data"
+msgstr ""
+
+#: src/Admin/Timeline.php:1616
+msgid "Conflict Finder (experimental)"
+msgstr ""
+
+#: src/Admin/Timeline.php:1619
+msgid "A guided, binary-search process that narrows down which plugin is causing a problem by testing with roughly half your plugins temporarily disabled, for one diagnostic browser only, never for other visitors. Requires the MU loader above first, which is what actually performs the isolation."
+msgstr ""
+
+#: src/Admin/Timeline.php:1623
+msgid "This only isolates regular plugins. Any active MU plugin, drop-in, or the current theme stays active throughout and is not part of this test."
+msgstr ""
+
+#: src/Admin/Timeline.php:1631
+msgid "Start Conflict Finder"
+msgstr ""
+
+#. translators: %s: plugin name
+#: src/Admin/Timeline.php:1644
+msgid "Likely conflicting plugin: %s"
+msgstr ""
+
+#: src/Admin/Timeline.php:1648
+msgid "This is a narrowing result, not certainty; confirm by re-testing with only that plugin active."
+msgstr ""
+
+#: src/Admin/Timeline.php:1650
+msgid "Inconclusive: the last plugin tested was cleared, but no other candidate remained. The problem may not be a single-plugin conflict, or may involve an MU plugin, drop-in, or the theme."
+msgstr ""
+
+#. translators: 1: round number 2: number of plugins being tested 3: number of remaining candidates
+#: src/Admin/Timeline.php:1655
+msgid "Round %1$d: keeping %2$d plugin(s) active out of %3$d remaining candidate(s)."
+msgstr ""
+
+#: src/Admin/Timeline.php:1669
+msgid "Also kept active: declared as a dependency of one of the plugins above:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1677
+msgid "Reproduce the problem now (open the site in a new tab in this same browser), then answer:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1678
+msgid "Is the problem still happening?"
+msgstr ""
+
+#: src/Admin/Timeline.php:1681
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/Timeline.php:1682
+msgid "No"
+msgstr ""
+
+#: src/Admin/Timeline.php:1683
+msgid "Unable to Test"
+msgstr ""
+
+#: src/Admin/Timeline.php:1697
+msgid "Cancel Conflict Finder"
+msgstr ""
+
+#: src/Admin/Timeline.php:1717
+msgid "Automated Mode: define a URL-status custom check under Tools → CrashTape → Diagnostics to run the finder automatically instead of answering Yes/No each round."
+msgstr ""
+
+#: src/Admin/Timeline.php:1724
+msgid "Automated Mode, run every round automatically using:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1730
+msgid "Run Automated"
+msgstr ""
+
+#: src/Admin/Timeline.php:1754
+msgid "Self-Test"
+msgstr ""
+
+#: src/Admin/Timeline.php:1759
+msgid "Run Self-Test"
+msgstr ""
+
+#: src/Admin/Timeline.php:1771
+msgid "Detail"
+msgstr ""
+
+#: src/Admin/Timeline.php:1788
+#: src/Admin/Timeline.php:1800
+msgid "Copy Self-Test Results"
+msgstr ""
+
+#: src/Admin/Timeline.php:1798
+msgid "Copied!"
+msgstr ""
+
+#: src/Admin/Timeline.php:1833
+msgid "Internal Log"
+msgstr ""
+
+#: src/Admin/Timeline.php:1834
+msgid "Operational failures in CrashTape itself, not diagnostic data about your site."
+msgstr ""
+
+#: src/Admin/Timeline.php:1837
+#: src/Admin/Timeline.php:2479
+#: src/Admin/Timeline.php:2631
+msgid "Time"
+msgstr ""
+
+#: src/Admin/Timeline.php:1837
+msgid "Category"
+msgstr ""
+
+#: src/Admin/Timeline.php:1837
+msgid "Message"
+msgstr ""
+
+#: src/Admin/Timeline.php:1852
+msgid "Clear Internal Log"
+msgstr ""
+
+#: src/Admin/Timeline.php:1867
+msgid "Privacy"
+msgstr ""
+
+#: src/Admin/Timeline.php:1872
+msgid "Privacy profile"
+msgstr ""
+
+#: src/Admin/Timeline.php:1874
+msgid "Strict: redact email addresses entirely, omit query strings entirely (default)"
+msgstr ""
+
+#: src/Admin/Timeline.php:1876
+msgid "Balanced: retain email domain only (e.g. [redacted]@example.com), and allowlisted query parameters below"
+msgstr ""
+
+#: src/Admin/Timeline.php:1878
+msgid "Advanced: retain full email addresses and complete query strings (every parameter, not just the allowlist below)"
+msgstr ""
+
+#: src/Admin/Timeline.php:1882
+msgid "Warning:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1882
+msgid "Advanced retains more than the other profiles: full email addresses and every query string parameter (e.g. search terms, IDs) captured sessions record from now on. Values are still scanned for recognizable secret patterns, but this is not a substitute for Strict/Balanced on a site with sensitive query data. Only enable this if you understand the tradeoff."
+msgstr ""
+
+#: src/Admin/Timeline.php:1885
+msgid "Query parameters safe to retain under Balanced (one per line, e.g. page, s, orderby). Ignored under Strict; every parameter is already retained under Advanced regardless of this list."
+msgstr ""
+
+#: src/Admin/Timeline.php:1889
+msgid "Save Privacy Setting"
+msgstr ""
+
+#: src/Admin/Timeline.php:1897
+msgid "Retention"
+msgstr ""
+
+#: src/Admin/Timeline.php:1901
+msgid "Keep sessions and support packages for (days):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1903
+msgid "Save Retention Setting"
+msgstr ""
+
+#: src/Admin/Timeline.php:1908
+msgid "Start Fresh"
+msgstr ""
+
+#: src/Admin/Timeline.php:1909
+msgid "Delete every completed diagnostic session (and its requests, events, and support packages) and the entire recent-changes journal, right now, regardless of the retention period above. An active recording in progress, if any, is not affected. Settings, the internal log, and Passive Monitoring stats are not affected either; those each have their own clear action."
+msgstr ""
+
+#: src/Admin/Timeline.php:1914
+msgid "Clear All Diagnostic Data"
+msgstr ""
+
+#: src/Admin/Timeline.php:1918
+msgid "Delete every completed diagnostic session and all recorded changes? This cannot be undone."
+msgstr ""
+
+#: src/Admin/Timeline.php:1929
+msgid "Custom Redaction Rules"
+msgstr ""
+
+#: src/Admin/Timeline.php:1930
+msgid "These apply in addition to the built-in secret detection above; they cannot loosen it."
+msgstr ""
+
+#: src/Admin/Timeline.php:1935
+msgid "Additional field names to redact (one per line, matched as a substring):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1939
+msgid "Additional regex patterns to mask in captured text (one per line, full PCRE incl. delimiters, e.g. /internal-[a-z0-9]+/i):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1942
+msgid "An invalid pattern is dropped on save rather than applied."
+msgstr ""
+
+#: src/Admin/Timeline.php:1944
+msgid "Save Redaction Rules"
+msgstr ""
+
+#: src/Admin/Timeline.php:1956
+msgid "Report Branding"
+msgstr ""
+
+#: src/Admin/Timeline.php:1957
+msgid "Shown on the human-readable summary.html included in every exported support package."
+msgstr ""
+
+#: src/Admin/Timeline.php:1962
+msgid "Your name or company name:"
+msgstr ""
+
+#: src/Admin/Timeline.php:1965
+msgid "Footer note (e.g. contact details):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1968
+msgid "Logo (PNG, JPEG, or GIF, 50KB max, embedded directly in the report):"
+msgstr ""
+
+#: src/Admin/Timeline.php:1972
+msgid "Remove current logo"
+msgstr ""
+
+#: src/Admin/Timeline.php:1977
+msgid "Save Report Branding"
+msgstr ""
+
+#: src/Admin/Timeline.php:1991
+msgid "Uninstall Behavior"
+msgstr ""
+
+#: src/Admin/Timeline.php:1992
+msgid "Choose what happens to sessions, settings, and support packages if you ever delete this plugin (not on ordinary deactivation)."
+msgstr ""
+
+#: src/Admin/Timeline.php:1998
+msgid "Keep my diagnostic data if this plugin is deleted"
+msgstr ""
+
+#: src/Admin/Timeline.php:2000
+msgid "Save Uninstall Preference"
+msgstr ""
+
+#: src/Admin/Timeline.php:2017
+msgid "Analysis"
+msgstr ""
+
+#: src/Admin/Timeline.php:2025
+msgid "No events were captured during this session, so there is nothing to analyze. If you reproduced the problem but nothing was recorded, see the warning above about a page cache possibly serving pages without this recorder running."
+msgstr ""
+
+#: src/Admin/Timeline.php:2027
+msgid "Events were captured, but none matched a known analysis rule. The raw evidence is still recorded below. Review the timeline and recent changes directly, or generate a support package to share with someone who can look further."
+msgstr ""
+
+#: src/Admin/Timeline.php:2035
+msgid "Most Likely Issue"
+msgstr ""
+
+#: src/Admin/Timeline.php:2037
+msgid "Confidence:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2040
+msgid "Evidence:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2046
+msgid "Suggested checks:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2053
+msgid "Other possible issues:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2089
+msgid "No requests captured yet."
+msgstr ""
+
+#: src/Admin/Timeline.php:2089
+msgid "If you've already tried browsing the site, a full-page cache may be serving pages without WordPress (and this recorder) ever running. Check for a cache-bypass setting on this host, or try reproducing the problem in a private/incognito window."
+msgstr ""
+
+#: src/Admin/Timeline.php:2105
+msgid "This is a visitor-mode session: the one-time link expires after 15 minutes and only works once. If it's been longer than that, or the link may have already been opened, generate a fresh link below."
+msgstr ""
+
+#: src/Admin/Timeline.php:2120
+msgid "Open the site in a private/incognito window (so it stays logged out) and visit this link to attach that browser to the session:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2122
+msgid "Open Site in Diagnostic Tab"
+msgstr ""
+
+#: src/Admin/Timeline.php:2123
+msgid "This link expires in 15 minutes and only sets a diagnostic cookie; it does not log the visitor in or grant any WordPress access."
+msgstr ""
+
+#: src/Admin/Timeline.php:2124
+msgid "If this site runs a full-page cache, a logged-out visitor can sometimes be served a cached page where WordPress (and this recorder) never runs. Clicking through this link helps avoid that on most default cache configurations, but a server-level or CDN cache may still need its own bypass rule."
+msgstr ""
+
+#. translators: %s: the diagnostic cookie's literal name, e.g. crashtape_diag
+#: src/Admin/Timeline.php:2128
+msgid "For a caching plugin that supports excluding requests by cookie name (e.g. WP Super Cache's Settings → Advanced → Rejected Cookies), add \"%s\" to skip the cache entirely for this diagnostic browser."
+msgstr ""
+
+#: src/Admin/Timeline.php:2142
+msgid "Baseline"
+msgstr ""
+
+#: src/Admin/Timeline.php:2147
+msgid "This session is the current healthy baseline."
+msgstr ""
+
+#: src/Admin/Timeline.php:2151
+msgid "Clear Baseline"
+msgstr ""
+
+#: src/Admin/Timeline.php:2160
+msgid "Mark This Session as Healthy Baseline"
+msgstr ""
+
+#: src/Admin/Timeline.php:2173
+msgid "What changed since the healthy baseline"
+msgstr ""
+
+#: src/Admin/Timeline.php:2178
+msgid "No meaningful differences from the baseline."
+msgstr ""
+
+#: src/Admin/Timeline.php:2183
+msgid "Plugin changes:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2191
+msgid "Environment changes:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2199
+msgid "New errors not seen in the baseline:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2211
+msgid "Environment at Session Start"
+msgstr ""
+
+#: src/Admin/Timeline.php:2278
+msgid "Recently failed actions:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2296
+msgid "Overdue pending actions:"
+msgstr ""
+
+#. translators: 1: WooCommerce version 2: on/off/unknown
+#: src/Admin/Timeline.php:2319
+msgid "WooCommerce %1$s (High-Performance Order Storage: %2$s)"
+msgstr ""
+
+#: src/Admin/Timeline.php:2321
+msgid "unknown"
+msgstr ""
+
+#: src/Admin/Timeline.php:2321
+msgid "on"
+msgstr ""
+
+#: src/Admin/Timeline.php:2321
+msgid "off"
+msgstr ""
+
+#: src/Admin/Timeline.php:2337
+msgid "Recently failed WooCommerce actions:"
+msgstr ""
+
+#. translators: 1: active count, 2: paused count, 3: disabled count
+#: src/Admin/Timeline.php:2360
+msgid "WooCommerce webhooks: %1$d active, %2$d paused, %3$d disabled"
+msgstr ""
+
+#: src/Admin/Timeline.php:2368
+msgid "WooCommerce webhooks with delivery failures:"
+msgstr ""
+
+#. translators: 1: webhook name, 2: topic, 3: failure count, 4: delivery host
+#: src/Admin/Timeline.php:2374
+msgid "%1$s (%2$s), %3$d consecutive failures, delivering to %4$s"
+msgstr ""
+
+#. translators: %d: number of overridden WooCommerce template files
+#: src/Admin/Timeline.php:2391
+msgid "WooCommerce template overrides in the active theme: %d"
+msgstr ""
+
+#. translators: 1: override's version, 2: current core version
+#: src/Admin/Timeline.php:2403
+msgid "outdated (%1$s, core is %2$s)"
+msgstr ""
+
+#. translators: %d: number of hours
+#: src/Admin/Timeline.php:2449
+msgid "Changes in the %d hours before this session started (correlation, not proof of cause):"
+msgstr ""
+
+#: src/Admin/Timeline.php:2473
+msgid "No changes recorded yet."
+msgstr ""
+
+#: src/Admin/Timeline.php:2480
+msgid "Change"
+msgstr ""
+
+#: src/Admin/Timeline.php:2526
+msgid "Support Package"
+msgstr ""
+
+#: src/Admin/Timeline.php:2531
+msgid "Generate Support Package"
+msgstr ""
+
+#: src/Admin/Timeline.php:2542
+msgid "File"
+msgstr ""
+
+#: src/Admin/Timeline.php:2543
+msgid "Size"
+msgstr ""
+
+#: src/Admin/Timeline.php:2544
+msgid "Created"
+msgstr ""
+
+#: src/Admin/Timeline.php:2545
+msgid "Expires"
+msgstr ""
+
+#: src/Admin/Timeline.php:2566
+msgid "Download"
+msgstr ""
+
+#: src/Admin/Timeline.php:2580
+msgid "Developer Mode"
+msgstr ""
+
+#: src/Admin/Timeline.php:2581
+msgid "Adds event UUIDs, request IDs, microsecond timing, and a raw JSON viewer to the timeline table above. Off by default so ordinary users see plain explanations, not raw internals."
+msgstr ""
+
+#: src/Admin/Timeline.php:2585
+msgid "Show developer detail in the timeline"
+msgstr ""
+
+#: src/Admin/Timeline.php:2586
+msgid "Save Developer Mode Setting"
+msgstr ""
+
+#: src/Admin/Timeline.php:2615
+msgid "No events recorded yet."
+msgstr ""
+
+#: src/Admin/Timeline.php:2632
+msgid "Channel"
+msgstr ""
+
+#: src/Admin/Timeline.php:2634
+msgid "Severity"
+msgstr ""
+
+#: src/Admin/Timeline.php:2635
+msgid "Component"
+msgstr ""
+
+#: src/Admin/Timeline.php:2638
+msgid "Correlation"
+msgstr ""
+
+#: src/Admin/Timeline.php:2644
+msgid "Event ID"
+msgstr ""
+
+#: src/Admin/Timeline.php:2645
+msgid "Request ID"
+msgstr ""
+
+#: src/Admin/Timeline.php:2646
+msgid "Data"
+msgstr ""
+
+#. translators: 1: repeat count 2: first-seen time 3: last-seen time
+#: src/Admin/Timeline.php:2676
+msgid "(Repeated %1$d times. First: %2$s. Last: %3$s.)"
+msgstr ""
+
+#: src/Admin/Timeline.php:2689
+msgid "View"
+msgstr ""
+
+#: src/Admin/Timeline.php:2700
+msgid "Severity:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2701
+msgid "Channel / type:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2702
+msgid "Component:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2702
+msgid "none attributed"
+msgstr ""
+
+#: src/Admin/Timeline.php:2705
+msgid "Correlation:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2708
+msgid "First seen:"
+msgstr ""
+
+#: src/Admin/Timeline.php:2709
+msgid "Last seen:"
+msgstr ""
+
+#. translators: %d: number of times this fingerprint recurred
+#: src/Admin/Timeline.php:2713
+msgid "%d occurrence"
+msgid_plural "%d occurrences"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Timeline.php:2743
+msgid "Filter timeline events"
+msgstr ""
+
+#: src/Admin/Timeline.php:2744
+msgid "All"
+msgstr ""
+
+#: src/Admin/Timeline.php:2745
+msgid "Errors only"
+msgstr ""
+
+#: src/Admin/Timeline.php:2746
+msgid "Warnings+"
+msgstr ""
+
+#. translators: %d: number of events shown
+#: src/Admin/Timeline.php:2760
+msgid "Showing all %d event(s)."
+msgstr ""
+
+#: src/Admin/Timeline.php:2900
+msgid "Related"
+msgstr ""
+
+#: src/Admin/Timeline.php:2901
+msgid "Nearby"
+msgstr ""
+
+#: src/Admin/Timeline.php:2906
+msgid "A foreground event with the same attributed component happened shortly before this background (WP-Cron) event."
+msgstr ""
+
+#: src/Admin/Timeline.php:2907
+msgid "This background (WP-Cron) event happened during the session but could not be tied to a specific foreground event."
+msgstr ""
+
+#: src/Diagnostics/CustomChecks.php:101
+msgid "Check failed to run."
+msgstr ""
+
+#: src/Diagnostics/CustomChecks.php:119
+msgid "Unknown check type."
+msgstr ""
+
+#. translators: 1: option name, 2: actual value, 3: expected value
+#: src/Diagnostics/CustomChecks.php:134
+msgid "Option \"%1$s\" is \"%2$s\" (expected \"%3$s\")."
+msgstr ""
+
+#. translators: %s: PHP constant name
+#: src/Diagnostics/CustomChecks.php:151
+msgid "Constant \"%s\" is defined."
+msgstr ""
+
+#. translators: %s: PHP constant name
+#: src/Diagnostics/CustomChecks.php:151
+msgid "Constant \"%s\" is not defined."
+msgstr ""
+
+#: src/Diagnostics/CustomChecks.php:162
+msgid "No URL configured."
+msgstr ""
+
+#. translators: %s: error message
+#: src/Diagnostics/CustomChecks.php:173
+msgid "Request failed: %s"
+msgstr ""
+
+#. translators: 1: actual HTTP status, 2: expected statuses
+#: src/Diagnostics/CustomChecks.php:187
+msgid "URL responded %1$d (expected %2$s)."
+msgstr ""
+
+#. translators: %s: plugin file path, e.g. woocommerce/woocommerce.php
+#: src/Diagnostics/CustomChecks.php:207
+msgid "Plugin \"%s\" is active."
+msgstr ""
+
+#. translators: %s: plugin file path, e.g. woocommerce/woocommerce.php
+#: src/Diagnostics/CustomChecks.php:207
+msgid "Plugin \"%s\" is not active."
+msgstr ""
+
+#: src/Isolation/ConflictFinder.php:180
+msgid "Automated Mode needs an existing URL-status custom check."
+msgstr ""
+
+#: src/SiteHealth/Integration.php:29
+msgid "CrashTape version"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:33
+msgid "Recording status"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:34
+msgid "Idle"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:37
+msgid "Stored sessions"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:41
+msgid "Last diagnostic session"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:42
+msgid "None yet"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:45
+msgid "Change journal status"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:49
+msgid "Browser recorder status"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:50
+msgid "Enqueued for the active session"
+msgstr ""
+
+#: src/SiteHealth/Integration.php:50
+msgid "Not loaded (no active session)"
+msgstr ""

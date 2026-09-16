@@ -1,0 +1,233 @@
+/**
+ * CrashTape admin UI. Deliberately reuses WordPress admin's own semantic
+ * colors (the exact hex values wp-admin's default color scheme already
+ * uses for notices/badges) rather than a custom palette or a webfont;
+ * this is a wp-admin screen, not a public page, and should look like a
+ * natural part of wp-admin, not a bolted-on product with its own brand.
+ */
+
+.crashtape-wrap {
+	--ct-success: #00a32a;
+	--ct-success-bg: #edfaef;
+	--ct-error: #d63638;
+	--ct-error-bg: #fcf0f1;
+	--ct-warning: #8a6d1c;
+	--ct-warning-bg: #fcf9e8;
+	--ct-info: #2271b1;
+	--ct-info-bg: #f0f6fc;
+	--ct-muted: #646970;
+	--ct-muted-bg: #f6f7f7;
+	--ct-border: #dcdcde;
+	--ct-radius: 4px;
+	max-width: 1240px;
+}
+
+.crashtape-wrap h1 .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.crashtape-wrap h2 {
+	margin: 2.5em 0 0.8em;
+}
+
+.crashtape-wrap h2:first-child {
+	margin-top: 1em;
+}
+
+/* ---- tabs ---- */
+
+.crashtape-tabs.nav-tab-wrapper {
+	margin: 20px 0 24px;
+}
+
+.crashtape-tab-panel:focus {
+	outline: none;
+}
+
+.crashtape-tab-panel h2:first-child {
+	margin-top: 0;
+}
+
+/* ---- cards ---- */
+
+.crashtape-card {
+	background: #fff;
+	border: 1px solid var(--ct-border);
+	border-radius: var(--ct-radius);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	padding: 16px 20px;
+	margin: 0 0 20px;
+}
+
+.crashtape-card > h2,
+.crashtape-card > h3 {
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+
+.crashtape-card-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-bottom: 20px;
+}
+
+.crashtape-card-grid > .crashtape-card {
+	flex: 1 1 260px;
+	margin-bottom: 0;
+}
+
+/* ---- stat tiles (dashboard summary) ---- */
+
+.crashtape-stat-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.crashtape-stat {
+	flex: 1 1 140px;
+}
+
+.crashtape-stat .crashtape-stat-n {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+	font-variant-numeric: tabular-nums;
+}
+
+.crashtape-stat .crashtape-stat-l {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: var(--ct-muted);
+}
+
+.crashtape-stat-n.is-ct-success { color: var(--ct-success); }
+.crashtape-stat-n.is-ct-warning { color: var(--ct-warning); }
+.crashtape-stat-n.is-ct-error { color: var(--ct-error); }
+
+/* ---- pills (severity / status / correlation) ---- */
+
+.crashtape-pill {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 999px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.7;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	white-space: nowrap;
+}
+
+.crashtape-pill--critical,
+.crashtape-pill--error,
+.crashtape-pill--fail { background: var(--ct-error-bg); color: var(--ct-error); }
+
+.crashtape-pill--warning,
+.crashtape-pill--related { background: var(--ct-warning-bg); color: var(--ct-warning); }
+
+.crashtape-pill--notice,
+.crashtape-pill--info,
+.crashtape-pill--nearby { background: var(--ct-info-bg); color: var(--ct-info); }
+
+.crashtape-pill--success,
+.crashtape-pill--pass,
+.crashtape-pill--good,
+.crashtape-pill--active,
+.crashtape-pill--complete { background: var(--ct-success-bg); color: var(--ct-success); }
+
+.crashtape-pill--muted,
+.crashtape-pill--unavailable { background: var(--ct-muted-bg); color: var(--ct-muted); }
+
+/* ---- tables ---- */
+
+.crashtape-table-wrap {
+	background: #fff;
+	border: 1px solid var(--ct-border);
+	border-radius: var(--ct-radius);
+	/* Release-readiness checklist Priority 20 found this the hard way,
+	 * while checking a real mobile-width screenshot: plain `overflow:
+	 * hidden` doesn't just clip the table's own rounded corners (the
+	 * original intent) - on a table wider than its container, it also
+	 * permanently hides the overflowing columns with no way to reach them
+	 * at all, not even a scrollbar. `overflow-x: auto` keeps the corner
+	 * clipping (still `overflow-y: hidden` implicitly, no fixed height
+	 * here to clip against) while making the overflow actually reachable.
+	 */
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-bottom: 20px;
+}
+
+.crashtape-table-wrap table.widefat {
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+.crashtape-event-row {
+	cursor: pointer;
+}
+
+.crashtape-event-row:hover {
+	background: var(--ct-muted-bg);
+}
+
+.crashtape-event-row:focus-visible {
+	outline: 2px solid var(--ct-info);
+	outline-offset: -2px;
+}
+
+.crashtape-detail-row td {
+	background: var(--ct-muted-bg);
+	padding: 12px 18px;
+}
+
+.crashtape-detail-row p {
+	margin: 0 0 6px;
+}
+
+.crashtape-detail-row pre,
+.crashtape-json-preview {
+	background: #fff;
+	border: 1px solid var(--ct-border);
+	border-radius: 3px;
+	padding: 8px;
+	margin: 4px 0 0;
+	max-width: 480px;
+	white-space: pre-wrap;
+}
+
+/* ---- filter bar ---- */
+
+.crashtape-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+.crashtape-filter-status {
+	color: var(--ct-muted);
+	font-size: 12.5px;
+}
+
+/* ---- misc ---- */
+
+.crashtape-muted {
+	color: var(--ct-muted);
+}
+
+.crashtape-empty {
+	color: var(--ct-muted);
+	font-style: italic;
+}
+
+.crashtape-visually-hidden {
+	position: absolute;
+	left: -9999px;
+}
